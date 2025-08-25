@@ -10,6 +10,17 @@ The project demonstrates a self-supervised learning approach for video activity 
 
 The core of this method is a **contrastive learning** pipeline that trains a 3D CNN backbone without requiring extensive labeled data. It learns robust spatiotemporal video representations by comparing different augmented views of video clips.
 
+<table align="center">
+  <tr>
+    <td><img src="doc/part_a.svg" alt="Spatiotemporal Augmentation" width="100%">
+    <p align="center"><b>(a)</b> Spatiotemporal Augmentation</p></td>
+    <td><img src="doc/part_b.svg" alt="Data Sampling Augmentation" width="100%">
+    <p align="center"><b>(b)</b> Data Sampling Augmentation</p></td>
+    <td><img src="doc/part_c.svg" alt="Contrastive Learning Pipeline" width="82%">
+    <p style="margin-left: 60px;"><b>(c)</b> Contrastive Learning Pipeline</p></td>
+  </tr>
+</table>
+
 A key contribution demonstrated in this code is a **data sampling augmentation** technique, where multiple augmented clip pairs are extracted from each video in every training epoch. This strategy is crucial for successfully training the model on smaller datasets, a common challenge in specialized domains like construction monitoring.
 
 ## Repository Content
